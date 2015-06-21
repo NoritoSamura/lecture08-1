@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>中間試験</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <ul>
+      <% questions.forEach(function(question){ %>
+      <li>
+        <a href="<%= question %>.html">
+          第<%= question %>問
+        </a>
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
